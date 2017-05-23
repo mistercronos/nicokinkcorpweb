@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script>
+            var a = prompt("Enter VIP password: ");
+            if (a === "WinnieTheFlower") {
+                document.write("Correct");
+            }
+            else {
+                document.write("INCORRECT");
+                window.location.replace("html2.html");
+            }
+        </script>
+        <style>
+            h1 {
+                POSITION: absolute;
+                top: -10px;
+            }
+            h6 {
+                position: absolute;
+                left: -10px;
+                top: 60px;
+            }
+            h4 {
+                position: absolute;
+                top: 500px;
+            }
+            * {
+                background-color: #FFBC9C;
+            }
+            h3 {
+                position:absolute;
+                top:400px;
+            }
+        </style>
+        <title>VIP Private Chatroom</title>
+        <h1>VIP Private Chatroom</h1>
+    </head>
+    <body>
+        <h6>_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</h6>
+        <script>
+        var answer = false;
+            while (answer !== true) {
+                var a = prompt("Would you like to talk with a specific person (SP) or the whole world (WW)? ");
+                var SP = "sp";
+                var WW = "ww";
+                var b = a.toLowerCase();
+                
+                if (b === SP) {
+                    answer = true;
+                    window.open('mailto:NicoKinkCorpOfficial@gmail.com?subject=Request To Create A Private Chatroom&body=Dear NicoKinkCorp, I am one of your very valuable clients, and I am requesting to create a chatroom to a specific person. I would like the password to be (Enter a password here !IF LEFT EMPTY PASSWORD WILL BE CHOSEN AT RANDOM! ), and I would (APPRECIATE OR DISLIKE !IF LEFT BLANK WILL BE NO!) having extra protection to my chatroom (Requires VIP packet 2 MINIMUM for this action). Thank you, A User');
+                }
+                else if (b === WW) {
+                    answer = true;
+                    console.log("Redirecting you to World Chat...");
+                    window.location.replace("https://chatroom2-nicolas121210.c9users.io");
+                }
+                else {
+                    console.log("Please enter a correct answer. The choices are SP and WW");
+                }
+            }
+        </script>
+        
+        
+        
+        <h4><a href="vipchatroom.html">Refresh</a></h4>
+    </body>
+</html>

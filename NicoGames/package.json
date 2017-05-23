@@ -1,0 +1,11 @@
+{
+  "name": "nicogames",
+  "version": "5.0.0",
+  "description": "a",
+  "main": "Game.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}

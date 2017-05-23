@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: black;
+        }
+        #Player1 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+            border-radius: 20px;
+        }
+        #Player2 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            border-radius: 20px;
+        }
+    </style>
+    <body>
+        <p>
+            <span style="position:absolute; top: 0px; right: 0px">
+            <button onclick="Left()">Left</button>
+            </span>
+
+        </p>
+        <div id="container">
+            <div id="Player1"></div>
+            <div id="Player2"></div>
+        </div>
+        <button onclick="Player1Left()">Player One Left</button>
+        <button onclick="Player2Left()">Player Two Left</button>
+        <script>
+        function Player1Left() {
+            var elem = document.getElementById("Player1");
+            var pos = 0;
+            var id = setInterval(frame, 5);
+                function frame() {
+                    if (pos == 50) {
+                        clearInterval(id);
+                    } else {
+                        pos++;
+                        elem.style.right = pos + 'px';
+                    }
+                }
+            }
+        function Player2Left() {
+            var elem = document.getElementById("Player2");
+            var posisf = false;
+            if (pos == 50) {
+                posisf = true;
+            }
+            if (posisf == false) {
+                var pos = 0;
+            }
+            var id = setInterval(frame, 5);
+                function frame() {
+                    if (pos == 50) {
+                        clearInterval(id);
+                    } else {
+                        pos++;
+                        elem.style.right = pos + 'px';
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
